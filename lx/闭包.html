@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<ul>
+			<li>abc1</li>
+			<li>abc2</li>
+			<li>abc3</li>
+			<li>abc4</li>
+			<li>abc5</li>
+		</ul>
+		<script>
+			var lis = document.getElementsByTagName("li");
+			for(var i=1;i<lis.length;i++){
+				lis[i].onclick=(function(i)){
+					alert(i)
+				}(i);
+			}
+		</script>
+	</body>
+</html>
